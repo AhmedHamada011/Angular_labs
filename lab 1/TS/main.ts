@@ -2,7 +2,7 @@ class Account{
   Acc_no:number;
   Balance:number;
 
-  debinAmount(){
+  debitAmount(){
 
   }
 
