@@ -1,0 +1,15 @@
+<div class="mb-3">
+
+  <div class="wrapper text-center">
+    <img [src]="imgSrc[current]">
+  </div>
+
+  <div class="buttons text-center">
+        <button (click)="next()" class="me-2 mt-2 btn btn-primary">next</button>
+      <button (click)="prev()" class="me-2 mt-2 btn btn-primary">prev</button>
+
+      <button (click)="slide()" class="me-2 mt-2 btn btn-primary">slide</button>
+      <button (click)="stop()" class="me-2 mt-2 btn btn-primary">stop</button>
+
+  </div>
+</div>
