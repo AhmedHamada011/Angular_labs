@@ -1,0 +1,22 @@
+<div class="vh-100 mt-4">
+  <h1 class="text-primary">Students</h1>
+<div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>name</th>
+        <th>age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of students;index as i">
+        <td>{{ i+1 }}</td>
+        <td>{{ student.name }}</td>
+        <td>{{ student.age }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</div>

@@ -1,0 +1,40 @@
+<div class="vh-100 mt-4">
+
+  <h1 class="text-primary">Registeration</h1>
+  <div>
+    <form (ngSubmit)="add()" [formGroup]="validationform">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input formControlName="name" type="text" class="form-control" id="name">
+        <div *ngIf="!nameValid" class="mt-1">
+          <p class="small text-danger">Name is required</p>
+        </div>
+
+      </div>
+
+      <div class="mb-3">
+        <label for="age" class="form-label">Age</label>
+        <input formControlName="age" type="text" class="form-control" id="age">
+        <div *ngIf="!ageValid" class="mt-1">
+          <p class="small text-danger">Age must be bigger than 20 and smaller than 40</p>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input formControlName="email" type="text" class="form-control" id="email">
+        <div *ngIf="!emailValid" class="mt-1">
+          <p class="small text-danger">Email is required</p>
+        </div>
+
+      </div>
+
+
+
+      <div>
+        <input type="submit" class="btn btn-primary" value="submit">
+      </div>
+    </form>
+  </div>
+
+</div>
